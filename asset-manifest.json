@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.50fefb01.css",
-    "main.js": "/static/js/main.ba5bc6fe.js",
+    "main.css": "/static/css/main.950bf0ca.css",
+    "main.js": "/static/js/main.8f70e211.js",
     "static/media/web_rake_logo.png": "/static/media/web_rake_logo.e5a6f4e0c63224373f4a.png",
     "static/media/RexTunes.png": "/static/media/RexTunes.a15acf0cd62b3b542a25.png",
     "static/media/hero.PNG": "/static/media/hero.8c80f7e2376aa0e77e97.PNG",
@@ -11,11 +11,11 @@
     "static/media/sdn_vs_trad.png": "/static/media/sdn_vs_trad.74a01d36d9495d6ad1be.png",
     "static/media/sdn-2.png": "/static/media/sdn-2.d2e13e382f6ec3c791f6.png",
     "index.html": "/index.html",
-    "main.50fefb01.css.map": "/static/css/main.50fefb01.css.map",
-    "main.ba5bc6fe.js.map": "/static/js/main.ba5bc6fe.js.map"
+    "main.950bf0ca.css.map": "/static/css/main.950bf0ca.css.map",
+    "main.8f70e211.js.map": "/static/js/main.8f70e211.js.map"
   },
   "entrypoints": [
-    "static/css/main.50fefb01.css",
-    "static/js/main.ba5bc6fe.js"
+    "static/css/main.950bf0ca.css",
+    "static/js/main.8f70e211.js"
   ]
 }
