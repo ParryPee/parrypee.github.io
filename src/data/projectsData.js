@@ -5,6 +5,7 @@ import sdn_image from '../assets/sdn-2.png';
 import sdn_image_2 from '../assets/sdn_vs_trad.png';
 import web_rake_image from '../assets/web_rake_logo.png';
 import ga_progress from "../assets/ga_progress.png"
+import sg_got_lots from "../assets/SGGotLotsMeh.png"
 
 // Central projects data repository
 const projectsData = [
@@ -115,7 +116,7 @@ These problems are known as optimization problems where there are a large number
     githubLink: "https://github.com/ParryPee/RexTunes",
     demoLink: "",
     featured: true,
-    category: "Bot Development",
+    category: "Bot",
     year: 2025
   },
   {
@@ -204,6 +205,31 @@ In the genetic algorithm, these two metrics work together but serve complementar
     demoLink: "",
     featured: true,
     category: "Algorithms",
+    year: 2025
+  },
+  {
+    id: "sg_carpark",
+    title: "Sg Carpark lots checker",
+    description: "A telegram bot that finds nearby carparks and returns their lots available.",
+    longDescription: `
+    A simple telegram bot that can be used to check for carpark lots nearby a certain location. It uses web_rake to scrape data from DataGov API for carpark lots availability along with OneMap API to convert the user input from a string to coordinates.
+      
+
+    `,
+    challenges: [
+      "Converting locations to coordinates",
+      "Telegram bot API",
+    ],
+    technologies: ["Python", "Telegram API","Requests"],
+    features: [
+      "Realtime carpark data",
+    ],
+    image: sg_got_lots,
+    gallery: [sg_got_lots], // Add more images when available
+    githubLink: "https://github.com/ParryPee/CarparkLotsChecker",
+    demoLink: "",
+    featured: false,
+    category: "Bot",
     year: 2025
   },
 ];
