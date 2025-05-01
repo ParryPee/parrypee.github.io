@@ -214,7 +214,7 @@ In the genetic algorithm, these two metrics work together but serve complementar
     longDescription: `
     A simple telegram bot that can be used to check for carpark lots nearby a certain location. It uses web_rake to scrape data from DataGov API for carpark lots availability along with OneMap API to convert the user input from a string to coordinates.
       
-
+    Check it out in the demo link!
     `,
     challenges: [
       "Converting locations to coordinates",
@@ -227,7 +227,7 @@ In the genetic algorithm, these two metrics work together but serve complementar
     image: sg_got_lots,
     gallery: [sg_got_lots], // Add more images when available
     githubLink: "https://github.com/ParryPee/CarparkLotsChecker",
-    demoLink: "",
+    demoLink: "https://t.me/SGWhereGotLot_bot",
     featured: false,
     category: "Bot",
     year: 2025
