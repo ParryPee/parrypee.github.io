@@ -43,7 +43,7 @@ const Projects = () => {
     },
     {
       id: "2048_solver",
-      title: "Solving 2048 game with Genetic ALgorithms",
+      title: "Solving 2048 game with Genetic Algorithms",
       description: "A project inspired by CS1010X to find optimal heuristic weights for 2048.",
       technologies: ["Python", "Genetic Algorithms", "Optimization","Numpy"],
       image: genetic_image
