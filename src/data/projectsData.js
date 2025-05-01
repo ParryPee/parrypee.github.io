@@ -4,6 +4,7 @@ import genetic_image from '../assets/Rosenbrock-Elitism.png';
 import sdn_image from '../assets/sdn-2.png';
 import sdn_image_2 from '../assets/sdn_vs_trad.png';
 import web_rake_image from '../assets/web_rake_logo.png';
+import ga_progress from "../assets/ga_progress.png"
 
 // Central projects data repository
 const projectsData = [
@@ -78,8 +79,8 @@ These problems are known as optimization problems where there are a large number
     gallery: [genetic_image], // Add more images when available
     githubLink: "https://github.com/ParryPee/GeneticAlgo",
     demoLink: "",
-    featured: true,
-    category: "Optimisation and Algorithms",
+    featured: false,
+    category: "Algorithms",
     year: 2022-2023
   },
   {
@@ -89,7 +90,7 @@ These problems are known as optimization problems where there are a large number
     longDescription: `
       RexTunes is a feature-rich Discord bot that enhances the music listening experience
       within Discord servers. Built with Python and the Discord.py library, RexTunes allows
-      users to play music from Youtube with plans to support other platforms in the future.
+      users to play music from Youtube and Spotify playlists.
       
       The bot supports queue management, playback controls, and advanced search features.
       It can handle multiple servers simultaneously and maintains separate queues for each.
@@ -98,14 +99,16 @@ These problems are known as optimization problems where there are a large number
     challenges: [
       "Handling Discord's rate limits and API changes",
       "Handling Youtube API restrictions",
-      "Implementing a robust queue system"
+      "Implementing a robust queue system",
+      "Event loops and async functions"
     ],
     technologies: ["Python", "Discord API", "FFmpeg", "YouTube API", "AsyncIO"],
     features: [
       "Youtube Playback",
       "Advanced queue management",
       "User-friendly commands",
-      "Customizable server settings"
+      "Customizable server settings",
+      "Spotify playlist support"
     ],
     image: rex_image,
     gallery: [rex_image], // Add more images when available
@@ -143,6 +146,64 @@ These problems are known as optimization problems where there are a large number
     demoLink: "",
     featured: false,
     category: "Web Development",
+    year: 2025
+  },
+  {
+    id: "2048_solver",
+    title: "2048: Genetic Algorithms",
+    description: "A project inspired by CS1010X to find optimal heuristic weights for 2048.",
+    longDescription: `
+    2048 is a game that typically involves a 4x4 grid where each start state comes with two randomly generated tiles of either a 4 or a 2. Players then typically input 1 of 4 moves, up, down, left or right to indicate the direction to merge the tiles, TILES CAN ONLY BE MERGED IF THEY ARE OF THE SAME VALUE. After every move, another randomly generated 4 or 2 is created in an empty tile.
+
+    The objective of this project was to use Genetic Algorithms to find an optimal set of weights used to determine the "score" of a given game board. This score is then used to determine which moves should be made.
+
+    The set of weights I decided to use after some research on the internet was:
+    1.Number of empty tiles, through testing and research. This turned out to be the most significant weight. You will typically see a much higher weightage for this heuristic.
+    2.Smaller differences for adjacent tiles, this metric calculates the actual physical difference between tiles in a row and column and returns the score as a penalty. Meaning that the higher the score the higher the difference between the tiles.
+    3.Corner tiles, this weight prefers larger tiles in the corner. This was a weight based off a strategy that game veterans do where they tend to put the higher scored tiles in the corner to maximise the space on the board.
+    4.Monotonocity, this weight prefers rows where the tiles increase and decrease in a consistent pattern. Eg. [2,4,8,16] versus [2,16,4,8].
+    5.Smoothness, this calculates the how smooth the transitions are between actual tiles, ignoring ZERO(empty) tiles.
+
+    Adjacent vs Smoothness:
+  Example to Illustrate the Difference
+  Consider this board:
+      0    2    0    4
+      0    0    0    0
+      2    0    8    0
+      0   16    0   32
+Adjacent Tiles Calculation:
+
+Will compute differences between all physically adjacent pairs (0-2, 2-0, 0-4, etc.)
+Treats zeros as values when calculating differences (e.g., 0-2 = -2)
+Penalizes scattered non-zero tiles with large differences between them
+
+Smoothness Calculation:
+
+Will only compare (2, 4) in the first row, (2, 8) in the third row, and (16, 32) in the fourth row
+Ignores zeros completely, focusing on the transitions between actual tiles
+Measures the "jaggedness" of the non-zero tile sequence
+
+In the genetic algorithm, these two metrics work together but serve complementary purposes - the adjacent tile penalty helps guide tile placement while smoothness helps create mergeable sequences.
+
+      
+    `,
+    challenges: [
+      "Recreating game logic using Numpy",
+      "Formulating genetic representation in the form of weights",
+      "Creating selection and crossover operators"
+    ],
+    technologies: ["Python", "Genetic Algorithms","Numpy","Matplotlib", "Game"],
+    features: [
+      "Genetic Algorithms",
+      "Customizable parameters",
+      "Graphical outputs"
+    ],
+    image: ga_progress,
+    gallery: [ga_progress], // Add more images when available
+    githubLink: "https://github.com/ParryPee/2048Solver",
+    demoLink: "",
+    featured: true,
+    category: "Algorithms",
     year: 2025
   },
 ];

@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import rex_image from '../assets/RexTunes.png';
-import genetic_image from '../assets/Rosenbrock-Elitism.png';
+import genetic_image from '../assets/ga_progress.png';
 import sdn_image from '../assets/sdn-2.png';
 
 const Projects = () => {
@@ -42,10 +42,10 @@ const Projects = () => {
       image: sdn_image
     },
     {
-      id: "genetic-algorithms",
-      title: "Applications in Genetic Algorithms",
-      description: "A project implementing genetic algorithms for optimization problems, showcasing the power of evolutionary computation.",
-      technologies: ["Python", "Genetic Algorithms", "Optimization"],
+      id: "2048_solver",
+      title: "Solving 2048 game with Genetic ALgorithms",
+      description: "A project inspired by CS1010X to find optimal heuristic weights for 2048.",
+      technologies: ["Python", "Genetic Algorithms", "Optimization","Numpy"],
       image: genetic_image
     },
     {

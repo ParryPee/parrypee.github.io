@@ -30,8 +30,14 @@ const ProjectsPage = () => {
     };
   }, []);
 
-  // Use the imported projects data
-  const allProjects = projectsData;
+  // Sort projects to show featured projects first
+  const allProjects = [...projectsData].sort((a, b) => {
+    // Featured projects come first
+    if (a.featured && !b.featured) return -1;
+    if (!a.featured && b.featured) return 1;
+    // If both are featured or both are not featured, maintain original order
+    return 0;
+  });
 
   // State for category filtering
   const [selectedCategory, setSelectedCategory] = useState('All');
