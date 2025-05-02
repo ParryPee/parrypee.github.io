@@ -39,7 +39,7 @@ const Cocurricular = () => {
       title: "Cisco APJC NetAcad Riders 2022",
       organization: "Cisco",
       description: "Competed in a network competition organized by Cisco, focusing on network design and implementation.",
-      skills: ["Networking", "Cisco", "Network Design", "Implementation"],
+      skills: ["Networking", "Cisco"],
       image: cisco_image,
       date: "2022"
     },
@@ -47,7 +47,7 @@ const Cocurricular = () => {
       title: "International Student Exchange",
       organization: "Kumamoto National Institute of Technology",
       description: "Participated in a 6 months exchange program, collaborating with local students on a Genetic Algorithm project.",
-      skills: ["Python", "Machine Learning", "Research", "PyTorch"],
+      skills: ["Genetic Algorithms", "International Exchange Program"],
       image: japan_image,
       date: "October 2023 - February 2024"
     },
