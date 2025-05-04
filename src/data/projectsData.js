@@ -6,6 +6,7 @@ import sdn_image_2 from '../assets/sdn_vs_trad.png';
 import web_rake_image from '../assets/web_rake_logo.png';
 import ga_progress from "../assets/ga_progress.png"
 import sg_got_lots from "../assets/SGGotLotsMeh.png"
+import hot_or_not from "../assets/HotOrNot.png"
 
 // Central projects data repository
 const projectsData = [
@@ -228,6 +229,31 @@ In the genetic algorithm, these two metrics work together but serve complementar
     gallery: [sg_got_lots], // Add more images when available
     githubLink: "https://github.com/ParryPee/CarparkLotsChecker",
     demoLink: "https://t.me/SGWhereGotLot_bot",
+    featured: false,
+    category: "Bot",
+    year: 2025
+  },
+  {
+    id: "sg_weather",
+    title: "SG weather bot",
+    description: "A telegram bot that can give the 24 hour forecast and show the 'feels like' temperature nearby the user.",
+    longDescription: `
+      Another simple telegram bot that makes use of the web scraper I made in the "Web Rake" project to grab weather data from DataGov APIs. It can display the 24-hour forecast of Singapore along with the "feels like" timperature calculated through the Relative Humidity and Air temperature.
+
+      Check it out in the Demolink!
+    `,
+    challenges: [
+      "Telegram bot API",
+    ],
+    technologies: ["Python", "Telegram API","Requests"],
+    features: [
+      "Realtime weather data",
+      "Feels-like temperature"
+    ],
+    image: hot_or_not,
+    gallery: [hot_or_not], // Add more images when available
+    githubLink: "https://github.com/ParryPee/WeatherBot",
+    demoLink: "https://t.me/SGHotOrBOt",
     featured: false,
     category: "Bot",
     year: 2025
